@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dossiers>
+  <Dossier>
+    <Customer>005499</Customer>
+    <Date>2022/05/13</Date>
+    <Type>L</Type>
+    <Planningsgroup>?</Planningsgroup>
+    <Reference>SO350155</Reference>
+    <CallOffId>SO350155</CallOffId>
+    <Transporttype>Vol</Transporttype>
+    <Missions>
+      <Mission>
+        <SequenceNumber>1</SequenceNumber>
+        <Goods>HOUT</Goods>
+        <Resource>TAUT</Resource>
+        <Load>
+          <Name>West Fraser</Name>
+          <Street>Eikelaarstraat</Street>
+          <HouseNbr>33</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>3600</Zipcode>
+          <City>CHATENOIS</City>
+          <Date>2022/03/29</Date>
+          <HourFrom>14:00</HourFrom>
+          <HourTo>14:59</HourTo>
+          <Reference>SO350155SHP042239</Reference>
+        </Load>
+        <Unload>
+          <Name>BURGER</Name>
+          <Street>RUE DE L'INDUSTRIE</Street>
+          <HouseNbr>2</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>67730</Zipcode>
+          <Date>2022/03/30</Date>
+          <HourFrom>10:59:00</HourFrom>
+          <Reference>SO350155SHP042239</Reference>
+        </Unload>
+        <Products>
+          <Product>
+            <SequenceNumber>1</SequenceNumber>
+            <Description>HOUT</Description>
+            <Weight>24059.7</Weight>
+            <LoadingMeter>13,60</LoadingMeter>
+          </Product>
+        </Products>
+      </Mission>
+    </Missions>
+  </Dossier>
+</Dossiers>

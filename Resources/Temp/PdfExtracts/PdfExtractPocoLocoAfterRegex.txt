@@ -1,0 +1,81 @@
+DELIVERY END
+DELIVERY BEGIN
+ LIDL GMBH & CO KG_KAMP-LINTF
+KRUMMENSTEG 137
+47475 KAMP-LINTFORT
+Germany
+
+Delivery reference 957131032201 Unloading times 06:00-12:00
+Delivery date 31/03/2022
+Name SNACK FOOD POCO LOCO NV
+Number of pallets 8 Exchange pallets: 8
+Specifications pallets 8,00 SOL EURO
+Total weight 1417.76 kilogram
+Europallets needs to be exchanged
+External unloading remarks: Carrier needs to book in before middday, day before delivery via
+WWW.MERCAREON.COM
+Login:
+transport@pocoloco.be
+Password:  PocMerc01@
+Driver to write Mercareon ref on CMR to present at Lidl Wahreneingang.
+Please book combined loads as one.
+In case of non-conform delivery the customer will charge us penalties.
+we have no other option than to charge them to the carrier.
+DELIVERY END
+DELIVERY BEGIN
+ EDEKA
+LAGER KREFELD
+NIROSTRASSE 2
+47807 KREFELD (NMD)
+Germany
+
+Delivery reference 2203018974576 Unloading times 07:00-07:00
+Delivery date 31/03/2022
+Name SNACK FOOD POCO LOCO NV
+Number of pallets 20 Chep pallets: 20
+Specifications pallets 10,00 SOL EURO
+Total weight 2180.56 kilogram
+Europallets needs to be exchanged
+External unloading remarks: 7u
+ref: 2005697427
+Carrier needs to book in, latest on day before delivery via
+WWW.MERCAREON.COM
+Login:
+transport@pocoloco.be
+Password: PocMerc01@
+Customer:
+Netto Marken GMBH
+Please book combined loads as one.
+In case of non-conform delivery the customer will charge us penalties.
+We have no other option than to charge them to the carrier.
+DELIVERY END
+DELIVERY BEGIN
+ EDEKA
+Goldammerweg 1
+46149 Oberhausen
+Germany
+
+Delivery reference 9481930 Unloading times 07:00-07:00
+Delivery date 31/03/2022
+Name SNACK FOOD POCO LOCO NV
+Number of pallets 6 Chep pallets: 6
+Specifications pallets 3,00 SOL EURO
+Total weight 1391.688 kilogram
+Europallets needs to be exchanged
+External unloading remarks: 7u
+ref: 1888710
+Carrier needs to book in latest one day befor load via
+WWW.MERCAREON.COM
+Login
+:
+transport@pocoloco.be
+Paswoord:
+PocMerc01@
+Customer:
+Edeka Rhein-Ruhr
+Delivery with regular trailers only (no MEGA)
+Please book combined loads as one.
+In case of non-conform delivery the customer will charge us penalties.
+we have no other option than to charge them to the carrier.
+TEL: 0049 163 7049119
+DELIVERY END

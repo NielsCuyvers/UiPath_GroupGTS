@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dossiers>
+  <Dossier>
+    <Customer>008008</Customer>
+    <Date>2022/05/09</Date>
+    <Type>L</Type>
+    <Planningsgroup>BNL</Planningsgroup>
+    <Reference>220868</Reference>
+    <CallOffId>220868</CallOffId>
+    <Transporttype>Vol</Transporttype>
+    <Missions>
+      <Mission>
+        <SequenceNumber>1</SequenceNumber>
+        <Goods>AG General Goods</Goods>
+        <Resource>TAUT</Resource>
+        <Load>
+          <Name>BAUMA STONE</Name>
+          <Street>RUE VOIE DE LIEGE</Street>
+          <HouseNbr>20</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>B-4681</Zipcode>
+          <Date>2022/05/10</Date>
+          <HourFrom>12:00</HourFrom>
+          <HourTo>16:00</HourTo>
+          <Reference>220868</Reference>
+        </Load>
+        <Unload>
+          <Name>GOBERT MATERIAUX SOIGNIES</Name>
+          <Street>CHEMIN DE LA GUELENNE </Street>
+          <HouseNbr>29</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>BE-7060</Zipcode>
+          <Date>2022/05/10</Date>
+          <HourFrom>08:00</HourFrom>
+          <HourTo>16:00</HourTo>
+          <Reference>32207285+32206970+32206985+32206988+32250759+32207127+32207201</Reference>
+        </Unload>
+        <Products>
+          <Product>
+            <SequenceNumber>1</SequenceNumber>
+            <LoadingMeter>13,60</LoadingMeter>
+          </Product>
+        </Products>
+      </Mission>
+      <Mission>
+        <SequenceNumber>2</SequenceNumber>
+        <Goods>AG General Goods</Goods>
+        <Resource>TAUT</Resource>
+        <Load>
+          <Name>BAUMA STONE</Name>
+          <Street>RUE VOIE DE LIEGE</Street>
+          <HouseNbr>20</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>B-4681</Zipcode>
+          <Date>2022/05/10</Date>
+          <HourFrom>12:00</HourFrom>
+          <HourTo>16:00</HourTo>
+          <Reference>220868</Reference>
+        </Load>
+        <Unload>
+          <Name>GOBERT MATERIAUX ATH</Name>
+          <Street>CHEMIN DU PONT CARRE</Street>
+          <HouseNbr>4</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>BE-7800</Zipcode>
+          <Date>2022/05/10</Date>
+          <HourFrom>08:00</HourFrom>
+          <HourTo>16:00</HourTo>
+          <Reference>32207062</Reference>
+        </Unload>
+        <Products>
+          <Product>
+            <SequenceNumber>1</SequenceNumber>
+            <LoadingMeter>13,60</LoadingMeter>
+          </Product>
+        </Products>
+      </Mission>
+      <Mission>
+        <SequenceNumber>3</SequenceNumber>
+        <Goods>AG General Goods</Goods>
+        <Resource>TAUT</Resource>
+        <Load>
+          <Name>BAUMA STONE</Name>
+          <Street>RUE VOIE DE LIEGE</Street>
+          <HouseNbr>20</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>B-4681</Zipcode>
+          <Date>2022/05/10</Date>
+          <HourFrom>12:00</HourFrom>
+          <HourTo>16:00</HourTo>
+          <Reference>220868</Reference>
+        </Load>
+        <Unload>
+          <Name>GEDIMAT THIEBAUT &amp; CIE SA</Name>
+          <Street>RUE LEFEBRE CATERS </Street>
+          <HouseNbr>20</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>BE-7500</Zipcode>
+          <Date>2022/05/10</Date>
+          <HourFrom>08:00</HourFrom>
+          <HourTo>16:00</HourTo>
+          <Reference>32206798+32206801+32207293</Reference>
+        </Unload>
+        <Products>
+          <Product>
+            <SequenceNumber>1</SequenceNumber>
+            <LoadingMeter>13,60</LoadingMeter>
+          </Product>
+        </Products>
+      </Mission>
+      <Mission>
+        <SequenceNumber>4</SequenceNumber>
+        <Goods>AG General Goods</Goods>
+        <Resource>TAUT</Resource>
+        <Load>
+          <Name>BAUMA STONE</Name>
+          <Street>RUE VOIE DE LIEGE</Street>
+          <HouseNbr>20</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>B-4681</Zipcode>
+          <Date>2022/05/10</Date>
+          <HourFrom>12:00</HourFrom>
+          <HourTo>16:00</HourTo>
+          <Reference>220868</Reference>
+        </Load>
+        <Unload>
+          <Name>PIERRE ET SOL BLANDAIN</Name>
+          <Street>RUE EDMOND DEWULF</Street>
+          <HouseNbr>23</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>BE-7522</Zipcode>
+          <Date>2022/05/10</Date>
+          <HourFrom>08:00</HourFrom>
+          <HourTo>16:00</HourTo>
+          <Reference>32207295</Reference>
+        </Unload>
+        <Products>
+          <Product>
+            <SequenceNumber>1</SequenceNumber>
+            <LoadingMeter>13,60</LoadingMeter>
+          </Product>
+        </Products>
+      </Mission>
+    </Missions>
+  </Dossier>
+</Dossiers>

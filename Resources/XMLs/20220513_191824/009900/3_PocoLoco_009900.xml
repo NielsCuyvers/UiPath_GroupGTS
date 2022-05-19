@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Dossiers>
+  <Dossier>
+    <Customer>009900</Customer>
+    <Date>2022/05/10</Date>
+    <Type>L</Type>
+    <Planningsgroup>Trading</Planningsgroup>
+    <Reference>30489266+30488973</Reference>
+    <CallOffId>30489266+30488973</CallOffId>
+    <Transporttype>GR</Transporttype>
+    <Missions>
+      <Mission>
+        <SequenceNumber>1</SequenceNumber>
+        <Goods>Food</Goods>
+        <Resource>TAUT</Resource>
+        <Load>
+          <Name>Snack Food Poco Loco HighBay</Name>
+          <Street>Pildersweg</Street>
+          <HouseNbr>2</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>8800</Zipcode>
+          <City>Roeselare</City>
+          <Date>2022/05/13</Date>
+          <HourFrom>04:00</HourFrom>
+          <HourTo>19:00</HourTo>
+          <Reference>30489266+30488973</Reference>
+        </Load>
+        <Unload>
+          <Name>EDEKA LAGER KERPEN</Name>
+          <Street>ROENTGENSTRASSE</Street>
+          <HouseNbr>70-74</HouseNbr>
+          <Country>Germany</Country>
+          <Zipcode>50169</Zipcode>
+          <City>KERPEN (NMD)</City>
+          <Date>2022/05/17</Date>
+          <HourFrom>08:45</HourFrom>
+          <HourTo>09:00</HourTo>
+          <Reference>2205019175031</Reference>
+        </Unload>
+        <Products>
+          <Product>
+            <SequenceNumber>1</SequenceNumber>
+            <Description>Food</Description>
+            <Weight>8467.136</Weight>
+            <LoadingMeter>10.4</LoadingMeter>
+          </Product>
+        </Products>
+      </Mission>
+      <Mission>
+        <SequenceNumber>2</SequenceNumber>
+        <Goods>Food</Goods>
+        <Resource>TAUT</Resource>
+        <Load>
+          <Name>Snack Food Poco Loco HighBay</Name>
+          <Street>Pildersweg</Street>
+          <HouseNbr>2</HouseNbr>
+          <Country>Belgium</Country>
+          <Zipcode>8800</Zipcode>
+          <City>Roeselare</City>
+          <Date>2022/05/13</Date>
+          <HourFrom>04:00</HourFrom>
+          <HourTo>19:00</HourTo>
+          <Reference>30489266+30488973</Reference>
+        </Load>
+        <Unload>
+          <Name>LIDL GMBH &amp; CO KG_KERPEN</Name>
+          <Street>FRAUNHOFER STRASSE</Street>
+          <HouseNbr>5</HouseNbr>
+          <Country>Germany</Country>
+          <Zipcode>50169</Zipcode>
+          <City>KERPEN</City>
+          <Date>2022/05/17</Date>
+          <HourFrom>12:45</HourFrom>
+          <HourTo>13:00</HourTo>
+          <Reference>957116052201</Reference>
+        </Unload>
+        <Products>
+          <Product>
+            <SequenceNumber>1</SequenceNumber>
+            <Description>Food</Description>
+            <Weight>8467.136</Weight>
+            <LoadingMeter>10.4</LoadingMeter>
+          </Product>
+        </Products>
+      </Mission>
+    </Missions>
+  </Dossier>
+</Dossiers>
