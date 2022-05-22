@@ -68,8 +68,43 @@ Nadat er een transactie item is meegegeven wordt dit behandeld in het process wo
 
 #### **Stap 1 - Eerste run**
 
-Als dit transactie item het eerste is worden er bepaalde variabelen en bestanden aangemaakt.
+Als dit transactie item het eerste is worden er bepaalde variabelen en bestanden aangemaakt. Zo wordt er een data tabel aangemaakt waar de feedback van alle transactie items instaat. In het begin staat elk transactie item status op een lege status. Zo kan er voor de klant geen verwarring opduiken.
 
+![Aanmaken van feedback data tabel](Documentation/Images/08_Proces.jpg)
+
+Daarna wordt deze data tabel weggeschreven in een nieuw Excel bestand dat als naam de unieke run nummer krijgt. Als de eerste rij van de data tabel wordt weggeschreven krijgt de tabel nog een stijl toegewezen in het Excel bestand.
+
+![Aanmaken van feedback Excel bestand](Documentation/Images/09_Proces.jpg)
+
+Voorbeeld van de start van een feedback tabel.
+
+![Voorbeeld feedback tabel](Documentation/Images/10_Proces.jpg)
+
+#### **Stap 2 - Normaal proces**
+
+#### **Aanmaken data tabellen**
+In het begin van het proces worden data tabellen aangemaakt. Deze data tabellen worden later aangevult met benodige data die in een XML bestand terug moeten komen.
+Zo worden volgende data tabellen aangemaakt:
+* Dossier
+  * De dossier data tabel bevat client nummer, datum aanmaak van dossier, plannigsgroup, etc.
+* Mission
+  * Bevat informatie over wat soort goederen er worden getransporteerd
+* Load
+  * Deze data tabel bevat de laad locatie van de te leveren goederen.
+  * Het bevat ook laad tijd en extra informatie over het laden.
+* Unload
+  * Hier worden al de los locatie opgeslagen
+  * Ook wordt zoals bij het laden de tijd opgeslagen en extra informatie over het lossen.
+* Products
+  * Hier wordt meegegeven wat soort goederen de client wilt transporteren en meer gedetaileerde informatie over de lading.
+
+![Aanmaken data tabellen](Documentation/Images/11_Proces.jpg)
+
+#### **Nakijken van klant**
+
+Per transactie item moet er nagekeken worden van welke klant de email komt. Dit is een belangerijk onderdeel in het proces omdat elke klant zijn eigen soort layout heeft in bijlages over transport. Hier wordt de client naam en client nummer opgeslagen in een variabelen om zo deze verder te gebruiken in het proces.
+
+![Aanmaken data tabellen](Documentation/Images/12_Proces.jpg)
 
 ## **Robotic Enterprise Framework**
 ### Documentation is included in the Documentation folder ###
