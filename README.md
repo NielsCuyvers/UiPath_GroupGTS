@@ -7,11 +7,28 @@ Dit project is een UiPath robot dat bepaalde mails uitleest die PDFs of Excel be
 
 Dit project is tot stand gebracht met gebruikmakend van UiPath en het UiPath Robotic Enterprise Framework. Meer informatie over het [Robotic Enterprise Framework](#robotic-enterprise-framework) kan u vinden onderaan de pagina.
 
-* [Initializering](#initializering)
-  1. [Aanmaken folders](#stap-1---aanmaken-folders)
-  1. [Emails lezen](#stap-2---emails-lezen)
-  1. [Verwijderen van folders vorig proces](#stap-3---verwijderen-van-folders-vorig-proces)
-* [Toewijzen transactie item](#toewijzen-transactie-item)
+- [**GroupGTS - behandelen transport**](#groupgts---behandelen-transport)
+  - [**Descriptie**](#descriptie)
+  - [**Waarneming**](#waarneming)
+  - [**Uitvoering**](#uitvoering)
+    - [**Initializering**](#initializering)
+      - [**Stap 1 - Aanmaken folders**](#stap-1---aanmaken-folders)
+      - [**Stap 2 - Emails lezen**](#stap-2---emails-lezen)
+      - [**Stap 3 - Verwijderen van folders vorig proces**](#stap-3---verwijderen-van-folders-vorig-proces)
+    - [**Toewijzen transactie item**](#toewijzen-transactie-item)
+    - [**Proces transactie item**](#proces-transactie-item)
+      - [**Stap 1 - Eerste run**](#stap-1---eerste-run)
+      - [**Stap 2 - Normaal proces**](#stap-2---normaal-proces)
+        - [**Aanmaken data tabellen**](#aanmaken-data-tabellen)
+        - [**Nakijken van klant**](#nakijken-van-klant)
+        - [**Algemeen voor cliënten**](#algemeen-voor-cliënten)
+        - [**Cliënt 1**](#cliënt-1)
+        - [**Cliënt 2**](#cliënt-2)
+  - [**Robotic Enterprise Framework**](#robotic-enterprise-framework)
+    - [Documentation is included in the Documentation folder](#documentation-is-included-in-the-documentation-folder)
+    - [REFrameWork Template](#reframework-template)
+    - [How It Works](#how-it-works)
+    - [For New Project](#for-new-project)
 
 ## **Uitvoering**
 
