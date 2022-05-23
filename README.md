@@ -23,6 +23,7 @@ Dit project is tot stand gebracht met gebruikmakend van UiPath en het UiPath Rob
       - [Algemeen voor cliënten](#algemeen-voor-cliënten)
       - [Cliënt 1](#cliënt-1)
       - [Cliënt 2](#cliënt-2)
+      - [Cliënt 3](#cliënt-3)
 - [Robotic Enterprise Framework](#robotic-enterprise-framework)
     - [Documentation is included in the Documentation folder](#documentation-is-included-in-the-documentation-folder)
     - [REFrameWork Template](#reframework-template)
@@ -177,12 +178,57 @@ Bij het uitlezen van de los adressen kan het zijn dat er maar één resultaat is
 
 ![Uitlezen adressen](Documentation/Images/25_Cliënt_1.jpg)
 
-De data tabellen Dossier, laden en lossen worden meegegeven naar een workflow waar alle benodigde informatie wordt omzet in een geheel dossier XML element. Dit XML dossier XML element wordt daarna toegevoegd aan het dossiers XML element. Nadat alle bijlage uit de email zijn uitgelezen wordt het dossiers XML element opgeslagen in een XML bestand.
+De data tabellen Dossier, laden en lossen worden meegegeven naar een workflow waar alle benodigde informatie wordt omzet in een geheel dossier XML element. Dit dossier XML element wordt daarna toegevoegd aan het dossiers XML element. Nadat alle bijlage uit de email zijn uitgelezen wordt het dossiers XML element opgeslagen in een XML bestand.
 
 ![Aanmaken XML elementen](Documentation/Images/26_Cliënt_1.jpg)
 
 #### Cliënt 2
 
+De tweede cliënt maakt ook gebruik van een PDF bestand om transport te documenteren. Elk bestand heeft basis informatie over de cliënt, ophaal informatie over het transport en enkele los lokaties (1 of meerdere).
+
+![Voorbeeld Poco Loco document pagina 1](Documentation/Images/27_Cliënt_2.jpg)
+
+![Voorbeeld Poco Loco document pagina 2](Documentation/Images/28_Cliënt_2.jpg)
+
+Zoals bij de eerste cliënt worden de footers gevolgd door een header verwijderd uit de geëxtraheerde tekst. Dit gebeurt door gebruikmakend van regular expressions.
+
+![Uitlezen PDF](Documentation/Images/29_Cliënt_2.jpg)
+
+Vervolgens word de main informatie uitgelezen ui de tekst om zo de dossier data tabel in te vullen. Daarna word de mission data tabel ingevuld met vaste variabelen. Deze variabelen bevatten inforamtie over het transport. Net zoals bij cliënt 1.
+
+![Uitlezen PDF](Documentation/Images/30_Cliënt_2.jpg)
+
+![Uitlezen PDF](Documentation/Images/31_Cliënt_2.jpg)
+
+Nadat de main infomatie uitgelezen is worden de laad en los adressen uitgelezen. Voor het laden is zoals bij cliënt één maar één adres meegegeven in het begin van het document. Voor het lossen kan er meer dan één adres zijn. Deze los punten zijn opgesplits door het woord DELIVERY in het begin van de zin. Zo weet de robot dat er meerdere los punten zijn.
+
+![Uitlezen adres informatie](Documentation/Images/32_Cliënt_2.jpg)
+
+De data tabellen Dossier, laden en lossen worden meegegeven naar een workflow waar alle benodigde informatie wordt omzet in een geheel dossier XML element. Dit dossier XML element wordt daarna toegevoegd aan het dossiers XML element. Nadat alle bijlage uit de email zijn uitgelezen wordt het dossiers XML element opgeslagen in een XML bestand.
+
+![Aanmaken XML bestand](Documentation/Images/33_Cliënt_2.jpg)
+
+#### Cliënt 3
+
+De tweede cliënt maakt gebruik van een Excel bestand om transport te documenteren. Elk bestand heeft basis informatie over de cliënt, ophaal informatie over het transport en enkele los lokaties (1 of meerdere).
+
+![Voorbeeld NorBord document](Documentation/Images/34_Cliënt_3.jpg)
+
+Bij het uitlezen van de spread sheet worden er twee verschillende tabellen met elkaar gemixt. Dit kunnen we voorkomen door uit deze uitgelezen tabel na te kijken of de eerste kolom een lege waarde heeft of niet. Als deze eerste kolom in de gehandelde rij een lege waarde heeft wordt deze niet toegevoegd aan de nieuw data tabel.
+
+![Lezen en verwijderen van data](Documentation/Images/35_Cliënt_3.jpg)
+
+Zoals bij de voorgaande klanten wordt de informatie uit het meegegeven bestand gehaald. de flow is hetzelfde, maar de data wordt uit een data tabel gehaald in plaats van een tekst.
+
+![Lezen van benodigde data](Documentation/Images/36_Cliënt_3.jpg)
+
+Met al de benodigde data tabellen gevuld me benodigde informatie worden deze in een workflow meegegeven om zo het dossiers XML element bij aan te vullen.
+
+![Aanmaken van dossiers element](Documentation/Images/37_Cliënt_3.jpg)
+
+Uiteindelijk na het lezen van alle bijlage van de email wordt het dossiers XML element opgeslagen in een XML bestand op de juiste lokatie.
+
+![Opslagen van XML bestand](Documentation/Images/38_Cliënt_3.jpg)
 
 
 ---
