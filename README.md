@@ -24,6 +24,8 @@ Dit project is tot stand gebracht met gebruikmakend van UiPath en het UiPath Rob
       - [Cliënt 1](#cliënt-1)
       - [Cliënt 2](#cliënt-2)
       - [Cliënt 3](#cliënt-3)
+      - [Afhandeling transactie item](#afhandeling-transactie-item)
+    - [Einde van proces](#einde-van-proces)
 - [Robotic Enterprise Framework](#robotic-enterprise-framework)
     - [Documentation is included in the Documentation folder](#documentation-is-included-in-the-documentation-folder)
     - [REFrameWork Template](#reframework-template)
@@ -229,6 +231,16 @@ Met al de benodigde data tabellen gevuld me benodigde informatie worden deze in 
 Uiteindelijk na het lezen van alle bijlage van de email wordt het dossiers XML element opgeslagen in een XML bestand op de juiste lokatie.
 
 ![Opslagen van XML bestand](Documentation/Images/38_Cliënt_3.jpg)
+
+#### Afhandeling transactie item
+
+Nadat het transactie item goed is afgehandeld wordt in de feedback tabel de status waarde van het huidige transactie item verandert naar 'Success'. Deze data tabel wordt dan nogmaals weggeschreven naar het feedback Excel bestand.
+
+![Afhandelen transactie item](Documentation/Images/39_Afhandeling.jpg)
+
+### Einde van proces
+
+Als er uiteindelijk geen transactie item die nog behandeld moeten zijn zal het proces zichzelf afronden. Hier worden de geopende applicatie doorheen het proces gesloten zodat de klant dit niet zelf hoeft te doen. Het feedback Excel bestand zal aanwezig zijn op de lokatie waar de feedback bestanden worden opgeslagen.
 
 
 ---
