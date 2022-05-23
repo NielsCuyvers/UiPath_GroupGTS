@@ -121,7 +121,16 @@ Door de client nummer te weten weet de robot hoe het bijlage van een email moet 
 
 ![Switch over client nummers](Documentation/Images/16_Proces.jpg)
 
-##### **Klant 1**
+##### **Algemeen voor clienten**
+
+ELke client heeft in de workflow ongeveer dezelfde layout. Zo is het makkelijker voor later om andere clienten toe te voegen. De PDF bestanden worden uitgelezen door gebruikmakend van een PDF tekst lezer en de bonodigede data wordt uit deze tekst gehaald met gehulp van regular expression. Voor Excel bestanden kan de robot gewoon cellen lezen uit een gestructureerde tabel.
+Nadat de informatie is uitgelezen wordt deze doorgevoerd aan een workflow waar het wordt omgevormd in een XML. Deze XML wordt daarna opgeslagen met een gepaste XML header.
+
+![Aanmaken XML dossiers](Documentation/Images/17_Proces.jpg)
+
+![Aanmaken XML dossiers](Documentation/Images/18_Proces.jpg)
+
+![Aanmaken XML dossiers](Documentation/Images/19_Proces.jpg)
 
 
 ## **Robotic Enterprise Framework**
