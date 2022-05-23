@@ -12,19 +12,18 @@ Dit project is tot stand gebracht met gebruikmakend van UiPath en het UiPath Rob
   - [Waarneming](#waarneming)
   - [Uitvoering](#uitvoering)
     - [Initializering](#initializering)
-      - [Stap 1 - Aanmaken folders](#stap-1---aanmaken-folders)
-      - [Stap 2 - Emails lezen](#stap-2---emails-lezen)
-      - [Stap 3 - Verwijderen van folders vorig proces](#stap-3---verwijderen-van-folders-vorig-proces)
+      - [Aanmaken folders](#aanmaken-folders)
+      - [Emails lezen](#emails-lezen)
+      - [Verwijderen van folders vorig proces](#verwijderen-van-folders-vorig-proces)
     - [Toewijzen transactie item](#toewijzen-transactie-item)
     - [Proces transactie item](#proces-transactie-item)
-      - [Stap 1 - Eerste run](#stap-1---eerste-run)
-      - [Stap 2 - Normaal proces](#stap-2---normaal-proces)
-        - [Aanmaken data tabellen](#aanmaken-data-tabellen)
-        - [Nakijken van klant](#nakijken-van-klant)
-        - [Algemeen voor cliënten](#algemeen-voor-cliënten)
-        - [Cliënt 1](#cliënt-1)
-        - [Cliënt 2](#cliënt-2)
-  - [Robotic Enterprise Framework](#robotic-enterprise-framework)
+      - [Eerste run](#eerste-run)
+      - [Aanmaken data tabellen](#aanmaken-data-tabellen)
+      - [Nakijken van klant](#nakijken-van-klant)
+      - [Algemeen voor cliënten](#algemeen-voor-cliënten)
+      - [Cliënt 1](#cliënt-1)
+      - [Cliënt 2](#cliënt-2)
+- [Robotic Enterprise Framework](#robotic-enterprise-framework)
     - [Documentation is included in the Documentation folder](#documentation-is-included-in-the-documentation-folder)
     - [REFrameWork Template](#reframework-template)
     - [How It Works](#how-it-works)
@@ -38,7 +37,7 @@ Hieronder zie je de workflow van het proces. Deze workflow is het Robotic Enterp
 
 ### Initializering
 
-#### Stap 1 - Aanmaken folders
+#### Aanmaken folders
 
 In het begin van het proces wordt er een uniek nummer gemaakt. Dit uniek nummer bestaat uit de combinatie van de start datum en start tijd tot op de second van het proces. Door dit te doen kunnen er bestanden en folders aangemaakt worden om voor huidige proces en kunnen nadien deze bestanden en folder bekeken worden.
 
@@ -47,7 +46,7 @@ In het begin zal er ook nagekeken worden of de feedback folder al bestaat. In de
 ![Nakijken of feedback folder bestaat](Documentation/Images/01_Init.jpg)
 ![Nakijken of XML folder bestaat](Documentation/Images/02_Init.jpg)
 
-#### Stap 2 - Emails lezen
+#### Emails lezen
 
 De workflow voor lezen van emails staat in een retry scope activiteit. Dit zorgt ervoor als er een probleem is tijdens het lezen van de emails zal het proces opnieuw proberen om deze workflow uit te voeren. Het aantal keren van herproberen kan meegegeven worden. Hier wordt er maximaal drie keer opnieuw geprobeert.
 
@@ -65,7 +64,7 @@ Verder in het proces wordt in de achtergrond de Outlook geopend. Als het gebruik
 
 Na het inlezen van de emails wordt de lijst met de te behandelende emails teruggegeven naar waar de workflow is opgeroepen. Namelijk in het initializerings proces.
 
-#### Stap 3 - Verwijderen van folders vorig proces
+#### Verwijderen van folders vorig proces
 
 Als laatste stap van de initializering wordt de folder waar de bestanden van emails worden gedownload verwijdert. Door dit te doen kan het proces met een propere werkplek starten. Deze bestanden worden verwijderd omdat na het proces van de robot deze bestanden niet meer van toepassing zijn. Het wordt hier opgeroepen omdat het mogelijk is dat het vorige proces gecrasht is en de bestanden niet had kunnen verwijderen.
 
@@ -82,7 +81,7 @@ Bij het afhandelen van voorgaande transactie item wordt er een gecontroleerde of
 
 Nadat er een transactie item is meegegeven wordt dit behandeld in het process workflow.
 
-#### Stap 1 - Eerste run
+#### Eerste run
 
 Als dit transactie item het eerste is worden er bepaalde variabelen en bestanden aangemaakt. Zo wordt er een data tabel aangemaakt waar de feedback van alle transactie items instaat. In het begin staat elk transactie item status op een lege status. Zo kan er voor de klant geen verwarring opduiken.
 
@@ -96,9 +95,7 @@ Voorbeeld van de start van een feedback tabel.
 
 ![Voorbeeld feedback tabel](Documentation/Images/10_Proces.jpg)
 
-#### Stap 2 - Normaal proces
-
-##### Aanmaken data tabellen
+#### Aanmaken data tabellen
 In het begin van het proces worden data tabellen aangemaakt. Deze data tabellen worden later aangevult met benodige data die in een XML bestand terug moeten komen.
 Zo worden volgende data tabellen aangemaakt:
 * Dossier
@@ -116,7 +113,7 @@ Zo worden volgende data tabellen aangemaakt:
 
 ![Aanmaken data tabellen](Documentation/Images/11_Proces.jpg)
 
-##### Nakijken van klant
+#### Nakijken van klant
 
 Per transactie item moet er nagekeken worden van welke klant de email komt. Dit is een belangerijk onderdeel in het proces omdat elke klant zijn eigen soort layout heeft in bijlages over transport. Hier wordt de cliënt naam en cliënt nummer opgeslagen in een variabelen om zo deze verder te gebruiken in het proces.
 
@@ -137,7 +134,7 @@ Door de cliënt nummer te weten weet de robot hoe het bijlage van een email moet
 
 ![Switch over cliënt nummers](Documentation/Images/16_Proces.jpg)
 
-##### Algemeen voor cliënten
+#### Algemeen voor cliënten
 
 Elke cliënt heeft in de workflow ongeveer dezelfde layout. Zo is het makkelijker voor later om andere cliënten toe te voegen. De PDF bestanden worden uitgelezen door gebruikmakend van een PDF tekst lezer en de bonodigede data wordt uit deze tekst gehaald met gehulp van regular expression. Voor Excel bestanden kan de robot gewoon cellen lezen uit een gestructureerde tabel.
 Nadat de informatie is uitgelezen wordt deze doorgevoerd aan een workflow waar het wordt omgevormd in een XML. Deze XML wordt daarna opgeslagen met een gepaste XML header.
@@ -148,7 +145,7 @@ Nadat de informatie is uitgelezen wordt deze doorgevoerd aan een workflow waar h
 
 ![Voorbeeld XML cliënt](Documentation/Images/19_Proces.jpg)
 
-##### Cliënt 1
+#### Cliënt 1
 
 De eerste cliënt maakt gebruik van een PDF bestand om transport te documenteren. Elk bestand heeft basis informatie over de cliënt, ophaal informatie over het transport en enkele los lokaties (1 of meerdere).
 
@@ -184,11 +181,12 @@ De data tabellen Dossier, laden en lossen worden meegegeven naar een workflow wa
 
 ![Aanmaken XML elementen](Documentation/Images/26_Cliënt_1.jpg)
 
-##### Cliënt 2
+#### Cliënt 2
 
 
 
-## Robotic Enterprise Framework
+---
+# Robotic Enterprise Framework
 ### Documentation is included in the Documentation folder ###
 
 [REFrameWork Documentation](https://github.com/UiPath/ReFrameWork/blob/master/Documentation/REFramework%20documentation.pdf)
