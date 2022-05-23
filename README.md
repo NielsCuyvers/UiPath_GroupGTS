@@ -82,7 +82,7 @@ Voorbeeld van de start van een feedback tabel.
 
 #### **Stap 2 - Normaal proces**
 
-#### **Aanmaken data tabellen**
+##### **Aanmaken data tabellen**
 In het begin van het proces worden data tabellen aangemaakt. Deze data tabellen worden later aangevult met benodige data die in een XML bestand terug moeten komen.
 Zo worden volgende data tabellen aangemaakt:
 * Dossier
@@ -100,11 +100,29 @@ Zo worden volgende data tabellen aangemaakt:
 
 ![Aanmaken data tabellen](Documentation/Images/11_Proces.jpg)
 
-#### **Nakijken van klant**
+##### **Nakijken van klant**
 
 Per transactie item moet er nagekeken worden van welke klant de email komt. Dit is een belangerijk onderdeel in het proces omdat elke klant zijn eigen soort layout heeft in bijlages over transport. Hier wordt de client naam en client nummer opgeslagen in een variabelen om zo deze verder te gebruiken in het proces.
 
 ![Aanmaken data tabellen](Documentation/Images/12_Proces.jpg)
+
+Nadat de klant is gevonden wordt er een folder aangemaakt waar alle bijlage bij deze email zal worden opgeslagen. Daarna zal alle bestanden met een bepaalde extensie gedownload worden en in deze aangemaakte map gestoken worden. Ook word de client naam en nummer toegevoegt aan de feedback data tabel op de huidige rij. Uiteindelijk wordt er ook nog een hoofdfolder voor XML bestanden van deze client in deze run aangemaakt.
+
+![Downloaden bijlage](Documentation/Images/13_Proces.jpg)
+
+![Check of XML folder van klant bestaat](Documentation/Images/14_Proces.jpg)
+
+
+Vooraleer de data uit de bestanden wordt gehaald gebeurt er een update in de feedback data tabel waardoor in de huidige rij de status verandert wordt door 'Processing...' en wordt dit weggeschreven in het feedback Excel bestand. Dit geeft aan voor de klant, in het Excel bestand, dat het process bezig is.
+
+![Wegeschrijven update naar Excel](Documentation/Images/15_Proces.jpg)
+
+Door de client nummer te weten weet de robot hoe het bijlage van een email moet aanpakken. Dit is voor elke client anders want, zoals eerder vermeld, heeft elke client zijn eigen layout voor documentatie van transport.
+
+![Switch over client nummers](Documentation/Images/16_Proces.jpg)
+
+##### **Klant 1**
+
 
 ## **Robotic Enterprise Framework**
 ### Documentation is included in the Documentation folder ###
