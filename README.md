@@ -85,7 +85,7 @@ Voorbeeld van de start van een feedback tabel.
 In het begin van het proces worden data tabellen aangemaakt. Deze data tabellen worden later aangevult met benodige data die in een XML bestand terug moeten komen.
 Zo worden volgende data tabellen aangemaakt:
 * Dossier
-  * De dossier data tabel bevat client nummer, datum aanmaak van dossier, plannigsgroup, etc.
+  * De dossier data tabel bevat cliënt nummer, datum aanmaak van dossier, plannigsgroup, etc.
 * Mission
   * Bevat informatie over wat soort goederen er worden getransporteerd
 * Load
@@ -95,17 +95,17 @@ Zo worden volgende data tabellen aangemaakt:
   * Hier worden al de los locatie opgeslagen
   * Ook wordt zoals bij het laden de tijd opgeslagen en extra informatie over het lossen.
 * Products
-  * Hier wordt meegegeven wat soort goederen de client wilt transporteren en meer gedetaileerde informatie over de lading.
+  * Hier wordt meegegeven wat soort goederen de cliënt wilt transporteren en meer gedetaileerde informatie over de lading.
 
 ![Aanmaken data tabellen](Documentation/Images/11_Proces.jpg)
 
 ##### **Nakijken van klant**
 
-Per transactie item moet er nagekeken worden van welke klant de email komt. Dit is een belangerijk onderdeel in het proces omdat elke klant zijn eigen soort layout heeft in bijlages over transport. Hier wordt de client naam en client nummer opgeslagen in een variabelen om zo deze verder te gebruiken in het proces.
+Per transactie item moet er nagekeken worden van welke klant de email komt. Dit is een belangerijk onderdeel in het proces omdat elke klant zijn eigen soort layout heeft in bijlages over transport. Hier wordt de cliënt naam en cliënt nummer opgeslagen in een variabelen om zo deze verder te gebruiken in het proces.
 
 ![Aanmaken data tabellen](Documentation/Images/12_Proces.jpg)
 
-Nadat de klant is gevonden wordt er een folder aangemaakt waar alle bijlage bij deze email zal worden opgeslagen. Daarna zal alle bestanden met een bepaalde extensie gedownload worden en in deze aangemaakte map gestoken worden. Ook word de client naam en nummer toegevoegt aan de feedback data tabel op de huidige rij. Uiteindelijk wordt er ook nog een hoofdfolder voor XML bestanden van deze client in deze run aangemaakt.
+Nadat de klant is gevonden wordt er een folder aangemaakt waar alle bijlage bij deze email zal worden opgeslagen. Daarna zal alle bestanden met een bepaalde extensie gedownload worden en in deze aangemaakte map gestoken worden. Ook word de cliënt naam en nummer toegevoegt aan de feedback data tabel op de huidige rij. Uiteindelijk wordt er ook nog een hoofdfolder voor XML bestanden van deze cliënt in deze run aangemaakt.
 
 ![Downloaden bijlage](Documentation/Images/13_Proces.jpg)
 
@@ -116,20 +116,59 @@ Vooraleer de data uit de bestanden wordt gehaald gebeurt er een update in de fee
 
 ![Wegeschrijven update naar Excel](Documentation/Images/15_Proces.jpg)
 
-Door de client nummer te weten weet de robot hoe het bijlage van een email moet aanpakken. Dit is voor elke client anders want, zoals eerder vermeld, heeft elke client zijn eigen layout voor documentatie van transport.
+Door de cliënt nummer te weten weet de robot hoe het bijlage van een email moet aanpakken. Dit is voor elke cliënt anders want, zoals eerder vermeld, heeft elke cliënt zijn eigen layout voor documentatie van transport.
 
-![Switch over client nummers](Documentation/Images/16_Proces.jpg)
+![Switch over cliënt nummers](Documentation/Images/16_Proces.jpg)
 
-##### **Algemeen voor clienten**
+##### **Algemeen voor cliënten**
 
-ELke client heeft in de workflow ongeveer dezelfde layout. Zo is het makkelijker voor later om andere clienten toe te voegen. De PDF bestanden worden uitgelezen door gebruikmakend van een PDF tekst lezer en de bonodigede data wordt uit deze tekst gehaald met gehulp van regular expression. Voor Excel bestanden kan de robot gewoon cellen lezen uit een gestructureerde tabel.
+Elke cliënt heeft in de workflow ongeveer dezelfde layout. Zo is het makkelijker voor later om andere cliënten toe te voegen. De PDF bestanden worden uitgelezen door gebruikmakend van een PDF tekst lezer en de bonodigede data wordt uit deze tekst gehaald met gehulp van regular expression. Voor Excel bestanden kan de robot gewoon cellen lezen uit een gestructureerde tabel.
 Nadat de informatie is uitgelezen wordt deze doorgevoerd aan een workflow waar het wordt omgevormd in een XML. Deze XML wordt daarna opgeslagen met een gepaste XML header.
 
 ![Aanmaken XML dossiers](Documentation/Images/17_Proces.jpg)
 
-![Voorbeeld layout client](Documentation/Images/18_Proces.jpg)
+![Voorbeeld layout cliënt](Documentation/Images/18_Proces.jpg)
 
-![Voorbeeld XML client](Documentation/Images/19_Proces.jpg)
+![Voorbeeld XML cliënt](Documentation/Images/19_Proces.jpg)
+
+##### **Cliënt 1**
+
+De eerste cliënt maakt gebruik van een PDF bestand om transport te documenteren. Elk bestand heeft basis informatie over de cliënt, ophaal informatie over het transport en enkele los lokaties (1 of meerdere).
+
+![Voorbeeld cliënt 1 pagina 1](Documentation/Images/20_Cliënt_1.jpg)
+
+![Voorbeeld cliënt 1 pagina 2](Documentation/Images/21_Cliënt_1.jpg)
+
+Bij het uitlezen van de PDF tekst worden de footer en headers van de volgende pagina verwijderd. Door dit te doen is er tussen de te lezen data geen onnodige tekst te vinden. Dit wordt, zoals voorgaande vermeld, verwezelijkt door gebruikmakend van regular expression.
+
+![Het verwijderen van pagina eindens](Documentation/Images/22_Cliënt_1.jpg)
+
+De main informatie wordt uitgelezen en wordt ogeslagen in de dossier data tabel. Deze data tabel bevat de informatie die het dossier XML element nodig heeft in het proces.
+Deze informatie bevat:
+* Dossier type
+* Transport type
+* Datum
+* Referencie nummmer(s)
+* Planningsgroep
+
+Bij het aanmaken van de mission data tabel worden er een aantal vaste variabelen meegegeven die aanwezig moeten zijn in eht mission XML element.
+
+![Aanmaken van dossier data tabel](Documentation/Images/23_Cliënt_1.jpg)
+
+![Aanmaken van mission data tabel](Documentation/Images/24_Cliënt_1.jpg)
+
+Nadat de main informatie is uitgelezen worden de benodigde adressen uitgelezen en in hun aangegeven data tabel gestoken. Het uitlezen van het laad adres geeft maar één resultaat per PDF. 
+
+Bij het uitlezen van de los adressen kan het zijn dat er maar één resultaat is maar mogelijks meerdere. Deze worden opgesplits bij het voorkomende woord 'Déchargement'.
+
+![Uitlezen adressen](Documentation/Images/25_Cliënt_1.jpg)
+
+De data tabellen Dossier, laden en lossen worden meegegeven naar een workflow waar alle benodigde informatie wordt omzet in een geheel dossier XML element. Dit XML dossier XML element wordt daarna toegevoegd aan het dossiers XML element. Nadat alle bijlage uit de email zijn uitgelezen wordt het dossiers XML element opgeslagen in een XML bestand.
+
+![Aanmaken XML elementen](Documentation/Images/26_Cliënt_1.jpg)
+
+##### **Cliënt 2**
+
 
 
 ## **Robotic Enterprise Framework**
