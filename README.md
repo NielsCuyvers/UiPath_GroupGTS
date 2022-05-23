@@ -26,6 +26,7 @@ Hieronder zie je de workflow van het proces. Deze workflow is het Robotic Enterp
 In het begin van het proces wordt er een uniek nummer gemaakt. Dit uniek nummer bestaat uit de combinatie van de start datum en start tijd tot op de second van het proces. Door dit te doen kunnen er bestanden en folders aangemaakt worden om voor huidige proces en kunnen nadien deze bestanden en folder bekeken worden.
 
 In het begin zal er ook nagekeken worden of de feedback folder al bestaat. In deze fodler zal elke feedback van elk proces worden opgeslagen. Het indetificeren van een proces wordt gedaan met gebruikmakende van het unieke nummer.
+
 ![Nakijken of feedback folder bestaat](Documentation/Images/01_Init.jpg)
 ![Nakijken of XML folder bestaat](Documentation/Images/02_Init.jpg)
 
@@ -33,9 +34,7 @@ In het begin zal er ook nagekeken worden of de feedback folder al bestaat. In de
 
 De workflow voor lezen van emails staat in een retry scope activiteit. Dit zorgt ervoor als er een probleem is tijdens het lezen van de emails zal het proces opnieuw proberen om deze workflow uit te voeren. Het aantal keren van herproberen kan meegegeven worden. Hier wordt er maximaal drie keer opnieuw geprobeert.
 
-
 ![Emails lezen](Documentation/Images/03_Init.jpg)
-
 
 Vooraleer de emails worden gelezen wordt er een lege lijst aangemaakt voor transactie items. Deze transactie items zijn de emails die behandeld moeten worden.
 
@@ -128,9 +127,9 @@ Nadat de informatie is uitgelezen wordt deze doorgevoerd aan een workflow waar h
 
 ![Aanmaken XML dossiers](Documentation/Images/17_Proces.jpg)
 
-![Aanmaken XML dossiers](Documentation/Images/18_Proces.jpg)
+![Voorbeeld layout client](Documentation/Images/18_Proces.jpg)
 
-![Aanmaken XML dossiers](Documentation/Images/19_Proces.jpg)
+![Voorbeeld XML client](Documentation/Images/19_Proces.jpg)
 
 
 ## **Robotic Enterprise Framework**
