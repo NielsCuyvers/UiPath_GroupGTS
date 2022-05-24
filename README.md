@@ -1,14 +1,14 @@
 # GroupGTS - behandelen transport documentatie
-## Descriptie
+## Omschrijving
 
-Dit project is een UiPath robot dat bepaalde mails uitleest die PDFs of Excel bestanden bezitten. In deze bestanden staat gestructureerde data die uitgelezen wordt om later te verwerken in een XML bestand dat zo verder buiten het proces van de robot gebruikt word.  
+Dit project is een UiPath robot dat bepaalde mails uitleest die PDFs of Excel bestanden bezitten. In deze bestanden staat gestructureerde data die uitgelezen wordt om later te verwerken in een XML bestand dat zo verder buiten het proces van de robot gebruikt word.
 
 ## Waarneming
 
 Dit project is tot stand gebracht met gebruikmakend van UiPath en het UiPath Robotic Enterprise Framework. Meer informatie over het [Robotic Enterprise Framework](#robotic-enterprise-framework) kan u vinden onderaan de pagina.
 
 - [GroupGTS - behandelen transport documentatie](#groupgts---behandelen-transport-documentatie)
-  - [Descriptie](#descriptie)
+  - [Omschrijving](#omschrijving)
   - [Waarneming](#waarneming)
   - [Uitvoering](#uitvoering)
     - [Initializering](#initializering)
